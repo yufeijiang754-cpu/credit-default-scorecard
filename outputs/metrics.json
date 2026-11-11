@@ -1,0 +1,42 @@
+{
+  "rows": 30000,
+  "default_rate": 0.2212,
+  "features_engineered": 10,
+  "features_selected": [
+    "pay_status_latest",
+    "months_delinq_6m",
+    "max_delinq_6m",
+    "limit_bal",
+    "pay_ratio_latest",
+    "pay_ratio_avg_6m",
+    "util_avg_6m",
+    "bill_trend_6m",
+    "util_latest",
+    "education"
+  ],
+  "auc_train": 0.7695,
+  "auc_test": 0.7597,
+  "ks_test": 0.4011,
+  "gini_test": 0.5193,
+  "psi_score_train_vs_test": 0.0013,
+  "iv": {
+    "pay_status_latest": 0.8874,
+    "months_delinq_6m": 0.8693,
+    "max_delinq_6m": 0.8177,
+    "limit_bal": 0.1743,
+    "pay_ratio_latest": 0.1374,
+    "pay_ratio_avg_6m": 0.1285,
+    "util_avg_6m": 0.1151,
+    "bill_trend_6m": 0.0742,
+    "util_latest": 0.0657,
+    "education": 0.035
+  },
+  "cutoff_at_80pct_approval": {
+    "cutoff": 509,
+    "approval_rate": 0.8,
+    "bad_rate_approved": 0.1416,
+    "portfolio_bad_rate": 0.2212,
+    "relative_bad_rate_reduction": 0.36,
+    "bads_avoided_pct": 0.488
+  }
+}
